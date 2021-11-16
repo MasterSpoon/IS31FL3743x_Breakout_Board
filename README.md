@@ -1,7 +1,7 @@
 
 # IS31FL3743x Breakout Board
 
-This ia a Dev board for the LUMISSIL Microsystems IS31FL3743A & IS31FL3743A LED drivers with the main difference being the A variant is I2C-1MHz and the B variant SPI-12MHz.
+This ia a Dev board for the LUMISSIL Microsystems IS31FL3743A & IS31FL3743B LED drivers with the main difference being the A variant is I2C-1MHz and the B variant SPI-12MHz.
 
 [IS31FL3743A datasheet](https://www.lumissil.com/assets/pdf/core/IS31FL3743A_DS.pdf)
 [IS31FL3743B datasheet](https://www.lumissil.com/assets/pdf/core/IS31FL3743B_DS.pdf)
@@ -35,8 +35,8 @@ IS31FL3743A Notes
     - Note : Not all address combinations have been made available through solder jumpers. 
 
 IS31FL3743B Notes
-- Omit R20 & R21 Resistors as these are for I2C Pullups
-- Cut the solder bridge traces for GN1VC & GN2VC to avoid the MOSI and SCK Pins being pulled to GND.
+- Omit R20 & R21 Resistors as these are for I2C Pullups and will pull MOSI & SCL Pins high.
+- Cut the solder bridge traces for GN1VC & GN2VC to avoid the CS and MISO Pins being pulled to GND.
 - Silkscreen is based on IS31FL3743A driver. Differences for IS31FL3743B are
 
 | Silkscreen | Function |
