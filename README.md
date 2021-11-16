@@ -10,7 +10,7 @@ The are both 18 x 11 matrix drivers capable of supporting up to 198 LEDs / 66 RG
 With an average current on each LED of 3.03mA they are suitable for SMD LEDs.
 Eg. [Foshan NationStar Optoelectronics FM-B2020RGBA-HG ](https://lcsc.com/product-detail/Light-Emitting-Diodes-LED_Foshan-NationStar-Optoelectronics-FM-B2020RGBA-HG_C108793.html )
 
-Parts list
+## Parts list
 
 | Part | Package | Location | Notes |
 |------|---------|----------|-------|
@@ -21,20 +21,23 @@ Parts list
 | 10K Resistor | 0805 | R19 | ISET Resistor |
 | 2K Resistor | 0805 | R20 & R21 | I2C pull up Resistors |
 
-General Notes
+## General Notes
+
 - In default configuration the breakout board is setup for the IS31FL3743A driver however if easily changed to suit the IS31FL3743B driver. 
 - CSx Resistors have been listed as 20ohm, if using for RGB change the Resistors to 51ohm for the CSx channels that will be used for Red.
 - SDB Pin is pulled high through the solder jumper, if wanting to control through MCU cut the jumper trace and solder a wire to the pad above the S Pin on the SDB solder jumper.
 
-IS31FL3743A Notes
+## IS31FL3743A Notes
+
 - I2C Pullup Resistors are connected to VCC, if using an MCU that is not 5V tollerant will need to omit R20 & R21 and provide pullup Resistors elsewhere.
 - I2C address default has ADDR1 & ADDR2 Pulled to GND. Solder jumpers can be used to change if required.
     - GN1VC Sets ADDR1 between GND and VCC, 514 sets ADDR1 between Pin 5(SCL) & Pin 4(SDA).
-    - GN2VC Sets ADDR1 between GND and VCC.
+    - GN2VC Sets ADDR2 between GND and VCC.
     - **WARNING** Before setting any solder jumpers first cut the jumper trace for the ADDR Pin first.
     - Note : Not all address combinations have been made available through solder jumpers. 
 
-IS31FL3743B Notes
+## IS31FL3743B Notes
+
 - Omit R20 & R21 Resistors as these are for I2C Pullups and will pull MOSI & SCL Pins high.
 - Cut the solder bridge traces for GN1VC & GN2VC to avoid the CS and MISO Pins being pulled to GND.
 - Silkscreen is based on IS31FL3743A driver. Differences for IS31FL3743B are
