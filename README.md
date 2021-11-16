@@ -56,7 +56,7 @@ Eg. [Foshan NationStar Optoelectronics FM-B2020RGBA-HG ](https://lcsc.com/produc
 
 ## Board Size
 
-The board has been designed to be compatible with a standard 2.54mm breadboard. It has two rows of 18x2.54mm pins spaced 7x2.54mm (17.78mm) apart.
+The board has been designed to be compatible with a standard 2.54mm breadboard. It has two rows of 18x2.54mm pins spaced 7x2.54mm (17.78mm) apart. There are two M3 mounting holes spaced 38mm apart but with a 3mm offset due to limited space. Both holes are equally 19mm from board centre however the top hole near the solder jumpers is 1mm to the right with the bottom hole 2mm to the left.
 
-![Board Size 46.75 x 21.33](/assets/BoardSize.jpg)
+![Board Size](/assets/Board.jpg)
 
