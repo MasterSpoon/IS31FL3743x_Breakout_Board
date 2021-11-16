@@ -53,3 +53,10 @@ Eg. [Foshan NationStar Optoelectronics FM-B2020RGBA-HG ](https://lcsc.com/produc
 | SCL | SCK |
 | A1 | CS |
 | A2 | MISO |
+
+## Board Size
+
+The board has been designed to be compatible with a standard 2.54mm breadboard. It has two rows of 18x2.54mm pins spaced 7x2.54mm (17.78mm) apart.
+
+![Board Size 46.75 x 21.33](/assets/BoardSize.jpg)
+
