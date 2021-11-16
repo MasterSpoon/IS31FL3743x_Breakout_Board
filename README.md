@@ -1,9 +1,14 @@
 
 # IS31FL3743x Breakout Board
 
+![TopRender](/assets/TopRender.jpg)
+
+![BotRender](/assets/BotRender.jpg)
+
 This ia a Dev board for the LUMISSIL Microsystems IS31FL3743A & IS31FL3743B LED drivers with the main difference being the A variant is I2C-1MHz and the B variant SPI-12MHz.
 
 [IS31FL3743A datasheet](https://www.lumissil.com/assets/pdf/core/IS31FL3743A_DS.pdf)
+
 [IS31FL3743B datasheet](https://www.lumissil.com/assets/pdf/core/IS31FL3743B_DS.pdf)
 
 The are both 18 x 11 matrix drivers capable of supporting up to 198 LEDs / 66 RGB LEDs.
@@ -33,7 +38,7 @@ Eg. [Foshan NationStar Optoelectronics FM-B2020RGBA-HG ](https://lcsc.com/produc
 - I2C address default has ADDR1 & ADDR2 Pulled to GND. Solder jumpers can be used to change if required.
     - GN1VC Sets ADDR1 between GND and VCC, 514 sets ADDR1 between Pin 5(SCL) & Pin 4(SDA).
     - GN2VC Sets ADDR2 between GND and VCC.
-    - **WARNING** Before setting any solder jumpers first cut the jumper trace for the ADDR Pin first.
+    - **WARNING** Before setting any solder jumpers cut the jumper trace for the ADDR Pin first.
     - Note : Not all address combinations have been made available through solder jumpers. 
 
 ## IS31FL3743B Notes
