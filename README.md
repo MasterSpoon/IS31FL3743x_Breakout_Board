@@ -1,3 +1,4 @@
+At present I have the PCB made and have them sitting on my desk but have not yet been able to test them. As far as I'm aware they should be fully functional but use them as your own risk. There is no warranty supplied or implied.
 
 # IS31FL3743x Breakout Board
 
